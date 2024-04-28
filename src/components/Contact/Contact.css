@@ -1,0 +1,139 @@
+#contact{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 80px;
+margin: 1rem 10rem;
+}
+.contact-title{
+position: relative;
+}
+
+@media screen and(max-width:500px) {
+   .contactLeft{
+    flex-direction: column;
+   }
+   .contactRight{
+    display: flex;
+    flex-direction: column;
+   }
+
+}
+.contact-title h1{
+color: rgb(201, 201, 201);
+padding:  0px 28px;
+font-size: 3.5rem;
+font-weight: 600;
+}
+.contact-title img{
+    position: absolute;
+    height: 5rem;
+    width: 8rem;
+    top:0;
+    right: -99px;
+    z-index: -1;
+    border-radius: 20px;
+}
+.contactSection{
+    display: flex;
+    gap: 12rem;
+
+}
+.contactLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contactLeft h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient( #ee35ff 20%,#5ac9fdee 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contactLeft p{
+    max-width: 500px;
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    line-height: 22px;
+
+}
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: aliceblue;
+    font-size: 10px;
+}
+.contactDetail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Img{
+    height: 2.2rem;
+    width: 2.4rem;
+    border-radius: 8px;
+}
+.contactRight{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:10px
+}
+.contactRight label{
+    color: rgb(182, 182, 182);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.contactRight  input{
+    border: none;
+    font-size: 18px;
+    outline: none;
+    width: 400px;
+    height: 60px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background: #d8d8d8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contactRight textarea{
+    width:390px;
+    height: 80px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #d8d8d8;
+    outline: none;
+
+}
+.btn{
+    border: none;
+    color: rgb(231, 231, 231);
+    border-radius: 20px;
+    background: linear-gradient( 160deg, #ca43ec -5%, #6dcec1 80%);
+    font-size: 1rem;
+    font-weight: 520;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.btn:hover{
+    transform: scale(1.05); 
+}
+
+@media (max-width:768px) {
+    .contactSection{
+        flex-direction: column;
+    }
+    .contactLeft{
+       margin: 0 80px;
+    }
+    .contactRight{
+        flex-direction: column;
+        width: 60px;
+    }
+
+}

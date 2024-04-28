@@ -1,0 +1,118 @@
+.navbar {
+  background: rgb(22, 22, 31);
+  height: 5rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+}
+.logo {
+  object-fit: cover;
+  height: 4rem;
+  width: 5rem;
+}
+.navOpen{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.navClose{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.desktopMenuListItem {
+  margin: 1.5rem;
+  cursor: pointer;
+}
+.desktopMenuListItembtn {
+  margin: 2rem;
+  height: 2rem;
+  width: 5rem;
+  background: linear-gradient(50deg, #af77e4, #fc993d);
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(231, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.desktopMenuListItembtn:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.desktopMenuListItem:hover {
+  color: rgb(255, 201, 135);
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid rgb(255, 201, 155);
+}
+.dektopImg {
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.4rem;
+}
+.desktopbtn {
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.active {
+  color: rgb(240, 155, 45);
+}
+.navOpen{
+  display: none;
+}
+.navClose{
+display: none;
+}
+@media (max-width:768px) {
+  .navbar{
+    margin: 20px 50px;
+  }
+  .desktopmenu{display: none;
+  }
+  .navOpen{
+    display: block;
+    position: fixed;
+    right:10px;
+  }
+  .navClose{
+    display: block;
+    position: relative;
+    top: 8px;
+    left: 238px;
+    width: 50px;
+  }
+  .desktopmenu{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #ffc690;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: 0.3s;
+    right: -350px;
+
+  }
+}

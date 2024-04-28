@@ -1,0 +1,63 @@
+#project {
+  color: rgb(163, 127, 107);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.projectIntro {
+  display: flex;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.IndvProject {
+  display: flex;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+.allProject {
+  padding: 1rem 10rem;
+  width: 100vw;
+  text-align: left;
+}
+.projectImg {
+  object-fit: cover;
+  height: 13rem;
+  width: 20rem;
+  margin-right: 2rem;
+  border-radius: 1.15rem;
+
+}
+.projectImg:hover{
+transform: scale(1.10);
+transition: 0.5s ease-in;
+border: 3px solid rgba(252, 21, 232, 0.8);
+border-radius: 15px;
+}
+
+@media (max-width:768px) {
+  .IndvProject{
+  flex-direction: column;
+    width: 320px;
+    margin-right: 0;
+  }
+  .projectDesc{
+    margin-top: 20px;
+  }
+  .projectImg {
+    object-fit: cover;
+    height: 10rem;
+    width: 15rem;
+    border-radius: 1.15rem;
+  
+  }
+
+}
