@@ -2,20 +2,22 @@
   margin: 0 auto;
   position: relative;
   display: flex;
-  padding: 40px;
-  left: 5rem;
- justify-content: space-between;
+  padding: 50px;
+  left: 3rem;
+  justify-content: space-between;
 }
 .introContent {
-  width: 40%;
+  width: 60%;
+  line-height: 40px;
+  padding: 60px;
 }
 .bg1 {
   display: flex;
-  width: 50%;
+  width: 35%;
 }
 .bg {
-  width: 400px;
-  height: 460px;
+  width: 430px;
+  height: 500px;
   border: none;
   border-radius: 50%;
   transition: 0.5s ease;
@@ -55,11 +57,9 @@
   border-radius: 2rem;
   cursor: pointer;
 }
-@media (max-width: 760px) {
+@media (max-width: 550px) {
   .bg1 {
-  
-   justify-content: center;
-  
+    justify-content: center;
   }
   .introContent {
     color: rgb(187, 187, 187);
@@ -74,5 +74,5 @@
     z-index: -1;
     margin-top: 450px;
     margin-right: 260px;
-    }
+  }
 }

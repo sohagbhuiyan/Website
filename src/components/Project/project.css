@@ -11,13 +11,14 @@
 
 .projectIntro {
   display: flex;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   font-family: sans-serif;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
 }
 .IndvProject {
+  font-size: 1.2rem;
   display: flex;
   padding: 1rem 1rem;
   margin: 0 auto;
@@ -43,13 +44,17 @@ border: 3px solid rgba(252, 21, 232, 0.8);
 border-radius: 15px;
 }
 
-@media (max-width:768px) {
+@media (max-width:550px) {
   .IndvProject{
-  flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 320px;
     margin-right: 0;
+    font-size: 0.5rem;
   }
   .projectDesc{
+    font-size: 18px;
     margin-top: 20px;
   }
   .projectImg {

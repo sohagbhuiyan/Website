@@ -1,11 +1,11 @@
-.footers{
-    width: 100vw;
-    height: 4rem;
-    background: rgb(40, 40, 40);
-    color: rgb(185, 185, 185);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: small;
+.footers {
+  width: 100vw;
+  height: 4rem;
+  background: rgb(40, 40, 40);
+  color: rgb(185, 185, 185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1rem;
 }

@@ -1,7 +1,7 @@
 .navbar {
-  background: rgb(22, 22, 31);
-  height: 5rem;
-  max-width: 100rem;
+  background: rgb(0, 0, 0);
+  height: 6rem;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 5rem;
   display: flex;
@@ -17,14 +17,14 @@
   height: 4rem;
   width: 5rem;
 }
-.navOpen{
+.navOpen {
   object-fit: cover;
   height: 3rem;
   width: 3rem;
   border-radius: 8px;
   cursor: pointer;
 }
-.navClose{
+.navClose {
   object-fit: cover;
   height: 3rem;
   width: 3rem;
@@ -32,9 +32,11 @@
   cursor: pointer;
 }
 .desktopMenuListItem {
-  margin: 1.5rem;
+  font-size: 1.4rem;
+  margin: 1.8rem;
   cursor: pointer;
 }
+
 .desktopMenuListItembtn {
   margin: 2rem;
   height: 2rem;
@@ -42,13 +44,21 @@
   background: linear-gradient(50deg, #af77e4, #fc993d);
   border: none;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   cursor: pointer;
   font-weight: bold;
   color: rgb(231, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.desktopMenuListItembtn:hover{
+
+.mobilemenu {
+  display: none;
+}
+.mobileListItem {
+  color: black;
+  width: 100%;
+}
+.desktopMenuListItembtn:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -60,11 +70,12 @@
 .dektopImg {
   object-fit: cover;
   height: 1.5rem;
-  width: 1.4rem;
+  width: 1.5rem;
 }
 .desktopbtn {
   background: white;
   color: black;
+  font-size: 1.4rem;
   font-weight: bold;
   border: none;
   display: flex;
@@ -77,42 +88,45 @@
 .active {
   color: rgb(240, 155, 45);
 }
-.navOpen{
+.navOpen {
   display: none;
 }
-.navClose{
-display: none;
+.navClose {
+  display: none;
 }
-@media (max-width:768px) {
-  .navbar{
+@media (max-width: 550px) {
+  .navbar {
     margin: 20px 50px;
+    display: none;
   }
-  .desktopmenu{display: none;
+  .desktopmenu {
+    display: none;
   }
-  .navOpen{
+  .navOpen {
     display: block;
     position: fixed;
-    right:10px;
+    right: 10px;
+    cursor: pointer;
   }
-  .navClose{
-    display: block;
-    position: relative;
-    top: 8px;
-    left: 238px;
-    width: 50px;
-  }
-  .desktopmenu{
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    top: 0;
-    gap: 30px;
-    background-color: #ffc690;
-    width: 350px;
-    height: 100%;
-    z-index: 2;
-    transition: 0.3s;
-    right: -350px;
 
+  .desktopbtn {
+    display: none;
+  }
+  .mobilemenu {
+    background: rgb(122, 105, 105);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 50vh;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 20px;
+    z-index: 97;
+  }
+  .mobileListItem {
+    width: 100%;
+    padding: 5px;
   }
 }
