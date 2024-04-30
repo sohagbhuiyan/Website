@@ -16,22 +16,23 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const menuref = useRef();
   const menuclose = () => {
-    setMenu((menu) => !menu);
+    console.log("gdf")
+    setMenu((men) => !men);
   };
   return (
     <>
       {menu ? (
         <img
           src={navClose}
-          alt="logo"
+          alt="navClose"
           className="navClose"
           onClick={menuclose}
         />
       ) : (
         <img
           src={navOpen}
-          alt="logo"
-          className="navClose"
+          alt="navOpen"
+          className="navOpen"
           onClick={menuclose}
         />
       )}
@@ -102,6 +103,8 @@ const Navbar = () => {
           </button>
         </Link>
       </nav>
+
+
       {menu && (
         <div className="mobilemenu">
           <Link
@@ -138,9 +141,7 @@ const Navbar = () => {
             Projects
           </Link>
 
-          <button onClick={CvDownload} className="mobileListItem">
-            CV
-          </button>
+        
           <Link
             activeClass="active"
             to="footer"
@@ -157,12 +158,16 @@ const Navbar = () => {
             smooth={true}
             offset={-90}
             duration={500}
+            className="mobileListItem"
           >
-            <button className="mobileListItem">
-              <img src={contact} alt="contact" className="dektopImg" />
+            
+              <img src={contact} alt="contact" className="mobileImg" />
               Contact Me
-            </button>
+  
           </Link>
+          <button onClick={CvDownload} className="mobileListItem1">
+            CV
+          </button>
         </div>
       )}
     </>

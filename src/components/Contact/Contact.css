@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
   gap: 80px;
   margin: 1rem 10rem;
 }
@@ -89,7 +89,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .contactRight textarea {
-  width: 420px;
+  width: 400px;
   height: 100px;
   font-size: 15px;
   border: none;
@@ -112,9 +112,13 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 400px) {
+  .contact-title {
+    margin-left: -50px;
+  }
   .contactSection {
     flex-direction: column;
+    margin-left: -20px;
   }
   .contactLeft {
     margin: 0 80px;
@@ -123,9 +127,19 @@
     align-items: center;
   }
   .contactRight {
-    flex-direction: column;
+    margin-top: -80px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
-    width: 60px;
   }
+  .contactRight input {
+    width: 390px;
+  }
+  .contact-title img {
+    height: 3rem;
+    width: 5rem;
+    top: 10px;
+    left: 140px;
+
+}
 }

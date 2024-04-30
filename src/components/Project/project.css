@@ -35,34 +35,31 @@
   width: 20rem;
   margin-right: 2rem;
   border-radius: 1.15rem;
-
 }
-.projectImg:hover{
-transform: scale(1.10);
-transition: 0.5s ease-in;
-border: 3px solid rgba(252, 21, 232, 0.8);
-border-radius: 15px;
+.projectImg:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+  border: 3px solid rgba(252, 21, 232, 0.8);
+  border-radius: 15px;
 }
 
-@media (max-width:550px) {
-  .IndvProject{
+@media (max-width: 400px) {
+  .IndvProject {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 320px;
-    margin-right: 0;
+    justify-content: center;
+    margin-left: -120px;
+    width: 300px;
     font-size: 0.5rem;
   }
-  .projectDesc{
-    font-size: 18px;
-    margin-top: 20px;
+  .projectDesc {
+    font-size: 14px;
+    margin-top: 10px;
   }
   .projectImg {
     object-fit: cover;
-    height: 10rem;
-    width: 15rem;
+    height: 6rem;
+    width: 8rem;
     border-radius: 1.15rem;
-  
   }
-
 }

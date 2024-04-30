@@ -1,7 +1,6 @@
 .navbar {
   background: rgb(0, 0, 0);
-  height: 6rem;
-  width: 100%;
+  height: 4.9rem;
   margin: 0 auto;
   padding: 1rem 5rem;
   display: flex;
@@ -18,16 +17,19 @@
   width: 5rem;
 }
 .navOpen {
+  display: none;
   object-fit: cover;
   height: 3rem;
   width: 3rem;
   border-radius: 8px;
   cursor: pointer;
+
 }
 .navClose {
+  display: none;
   object-fit: cover;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -55,6 +57,7 @@
   display: none;
 }
 .mobileListItem {
+  background: white;
   color: black;
   width: 100%;
 }
@@ -79,8 +82,6 @@
   font-weight: bold;
   border: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 2rem;
   border-radius: 2rem;
   cursor: pointer;
@@ -88,16 +89,10 @@
 .active {
   color: rgb(240, 155, 45);
 }
-.navOpen {
-  display: none;
-}
-.navClose {
-  display: none;
-}
-@media (max-width: 550px) {
+
+@media (max-width: 400px) {
   .navbar {
-    margin: 20px 50px;
-    display: none;
+  display: none;
   }
   .desktopmenu {
     display: none;
@@ -105,23 +100,39 @@
   .navOpen {
     display: block;
     position: fixed;
-    right: 10px;
+    top: 20px;
+    right: 120px;
     cursor: pointer;
+    z-index: 99;
+  }
+  .navClose {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    top: 10px;
+    z-index: 99;
+}
+  .mobileImg{
+    height: 3rem;
+    width: 3rem;
+    
   }
 
   .desktopbtn {
     display: none;
   }
   .mobilemenu {
-    background: rgb(122, 105, 105);
+    background: rgb(252, 252, 252);
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 50vh;
+    width: 75%;
+    height: 100vh;
     color: black;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     padding: 16px 20px;
     z-index: 97;
   }
@@ -129,4 +140,8 @@
     width: 100%;
     padding: 5px;
   }
+.mobileListItem1{
+  padding: 10px 10px;
+  
+}
 }
