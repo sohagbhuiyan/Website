@@ -8,7 +8,7 @@ import navClose from "../../assets/nc.png";
 const Navbar = () => {
   const CvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1c7fNSEsD4LyZBfgn39ImuNUZsBwOxNfX/view?usp=drive_link",
+      "https://drive.google.com/file/d/1QZRqzyHy0N54EnCyr6_CnZiB7d1mz73g/view?usp=sharing",
       "_blank"
     );
   };
@@ -16,7 +16,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const menuref = useRef();
   const menuclose = () => {
-    console.log("gdf")
+    console.log("gdf");
     setMenu((men) => !men);
   };
   return (
@@ -104,7 +104,6 @@ const Navbar = () => {
         </Link>
       </nav>
 
-
       {menu && (
         <div className="mobilemenu">
           <Link
@@ -141,7 +140,6 @@ const Navbar = () => {
             Projects
           </Link>
 
-        
           <Link
             activeClass="active"
             to="footer"
@@ -160,10 +158,8 @@ const Navbar = () => {
             duration={500}
             className="mobileListItem"
           >
-            
-              <img src={contact} alt="contact" className="mobileImg" />
-              Contact Me
-  
+            <img src={contact} alt="contact" className="mobileImg" />
+            Contact Me
           </Link>
           <button onClick={CvDownload} className="mobileListItem1">
             CV
