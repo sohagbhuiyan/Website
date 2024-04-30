@@ -131,15 +131,19 @@
     margin-left: 30px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 20px;
   }
   .contactRight input {
-    width: 390px;
+    width: 350px;
   }
   .contact-title img {
     height: 3rem;
     width: 5rem;
     top: 10px;
     left: 140px;
-
-}
+  }
+  .contactRight textarea {
+    width: 330px;
+  }
 }
