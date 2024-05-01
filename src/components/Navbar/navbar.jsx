@@ -8,7 +8,7 @@ import navClose from "../../assets/nc.png";
 const Navbar = () => {
   const CvDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/1QZRqzyHy0N54EnCyr6_CnZiB7d1mz73g/view?usp=sharing",
+      "https://drive.google.com/file/d/1LLslhA-C1LJe0sSR6GvT0Ld7UOZMtPl7/view?usp=sharing",
       "_blank"
     );
   };
